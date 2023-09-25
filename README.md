@@ -37,3 +37,11 @@ Rpta: Porque el servidor falso está aceptando la solicitud desde un puerto LOCA
 Prueba curl --help para ver la ayuda y verificar que la línea de comando curl -i 'http://randomword.saasbook.info' mostrará ambos (BOTH) encabezados de respuesta del servidor y(AND) luego el cuerpo de la respuesta.
 Como se puede ver en la imagen la primera parte es el encabezado y la segunda parte el cuerpo con el código html
 ![Captura desde 2023-09-25 11-45-16](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/6c57d992-2d56-4c20-a4a0-ae1fcc5cf998)
+
+Pregunta: Según los encabezados del servidor, ¿cuál es el código de respuesta HTTP del servidor que indica el estado de la solicitud del cliente y qué versión del protocolo HTTP utilizó el servidor para responder al cliente?
+Basicamente la linea de la flecha roja responde a la pregunta, el http/1.1 inidica la que la version de protocolo que se usó es 1.1 y el numero 200 indica que la solicitud se realizó con éxito.
+![Captura desde 2023-09-25 11-49-35](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/8b1a918e-93a4-45a0-950b-204a4e3e7f77)
+
+Pregunta: Cualquier solicitud web determinada puede devolver una página HTML, una imagen u otros tipos de entidades. ¿Hay algo en los encabezados que crea que le dice al cliente cómo interpretar el resultado?
+Si, en la imagen de abajo se aprecia la informacion que proporciona el encabezado para que el cliente interprete el resultado, por ejemplo Content-Type indica el formato del cuerpo de la respuesta, ese este caso sera de formato html
+![Captura desde 2023-09-25 11-55-47](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/0e0398a5-8387-44dc-abd6-4945eeb8216d)
