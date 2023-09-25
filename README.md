@@ -73,5 +73,13 @@ Tanto el encabezado 4xx como el 5xx indican condiciones de error. ¿Cuál es la 
 Los errores del tipo 4xx son errores causados por el cliente, como por ejemplo poner una url inexistente en la solicitud (votará error 404) en cambio los errores del tipo 5xx son errores del servidor, no del cliente, al momento de procesar la solicitud del cliente
 
 HTTP sin estados y cookies
+
 Pregunta: Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? 
+
+Resultado del primer comando GET/​
 ![Captura desde 2023-09-25 12-09-51](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/be7bc2c3-0ae6-41f8-8b12-9f7f0cd62394)
+
+Resultado del segundo comando GET/login
+
+![Captura desde 2023-09-25 12-13-19](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/6f3efe45-f1b4-4bf5-b014-6c69c6b68d75)
+
