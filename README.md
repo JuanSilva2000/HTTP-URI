@@ -115,6 +115,6 @@ El resultado que se muestra el la flecha roja indica que la cookie ha sido envia
 
 ![Captura desde 2023-09-25 12-32-14](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/9fffc354-27a9-428d-aadd-62dfd21f269e)
 
-Pregunta: Al observar el encabezado Set-Cookie o el contenido del archivo cookies.txt, parece que podría haber creado fácilmente esta cookie y simplemente obligar al servidor a creer que ha iniciado sesión. En la práctica, ¿cómo evitan los servidores esta inseguridad?
+<h3>Pregunta: Al observar el encabezado Set-Cookie o el contenido del archivo cookies.txt, parece que podría haber creado fácilmente esta cookie y simplemente obligar al servidor a creer que ha iniciado sesión. En la práctica, ¿cómo evitan los servidores esta inseguridad?</h3>
 
 -Autenticación basada en token, cuando un usuario inicia sesion luego un servidor de autorización valida esa autenticación inicial y luego emite un token de acceso, que es un pequeño dato que le permite a una aplicación de cliente realizar una llamada o señal segura a un servidor API, de esta manera el token funciona como un boleto de acceso para que el usuario accesa a todos los recursos, el ciclo de vida del token finaliza cuando el usuario cierra sesion/abandoa sesión [5]
