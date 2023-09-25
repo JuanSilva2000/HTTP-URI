@@ -89,3 +89,10 @@ La diferencia está en la flecha roja que indica una parte de la cabecera en don
 Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró una cookie que indica esto. Sin embargo, si intentaa GET / nuevamente, seguirá diciendo "Logged: false". ¿Qué está sucediendo? (Sugerencia: usa curl -v y observa los encabezados de solicitud del cliente).
 
 Rpta:Lo que sucede es que la cookie solo se envia al servidor cuando el cliente lo especifica en la solicitud, es por eso que cuando hacemos el Get/ (curl -v 'http://esaas-cookie-demo.herokuapp.com') no especifimos alguna cookie (loggin_in = true) por lo tanto el servidor me responde como si no estuviera conectado
+
+
+Ahora debemos decirle a curl que incluya las cookies apropiadas de este archivo cuando visite el sitio, lo cual hacemos con la opción -b:​
+curl -v -b cookies.txt http://esaas-cookie-demo.herokuapp.com/
+El resultado que se muestra el la flecha roja indica que la cookie ha sido enviado, y el servidor a respondido con un logged in: true
+
+![Captura desde 2023-09-25 12-32-14](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/9fffc354-27a9-428d-aadd-62dfd21f269e)
