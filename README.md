@@ -53,6 +53,7 @@ Si, en la imagen de abajo se aprecia la informacion que proporciona el encabezad
 ![Captura desde 2023-09-25 11-55-47](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/0e0398a5-8387-44dc-abd6-4945eeb8216d)
 
 ----------¿Qué sucede cuando falla un HTTP request?-----------
+
 Pregunta: ¿Cuál sería el código de respuesta del servidor si intentaras buscar una URL inexistente en el sitio generador de palabras aleatorias? Pruéba esto utilizando el procedimiento anterior.
 Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna un cuerpo html en la respuesta y en la primera linea del encabezado, devuelde el numero 404 este es un error que significa que lo que se solicito no se encontró
 ![Captura desde 2023-09-25 12-00-13](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/b209e03f-f0aa-4f1b-9af2-5d47b34fbe4f)
@@ -82,7 +83,6 @@ Como se muestra en la imagen, la url que se debe remplazar es 'http://localhost:
 
 
 Pregunta:¿Cómo se presenta al servidor la información que ingresó en el formulario? ¿Qué tareas necesitaría realizar un framework SaaS como Sinatra o Rails para presentar esta información en un formato conveniente a una aplicación SaaS escrita, por ejemplo, en Ruby?
-
 
 
 
