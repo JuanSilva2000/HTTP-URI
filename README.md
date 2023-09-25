@@ -90,9 +90,12 @@ Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró un
 
 Rpta:Lo que sucede es que la cookie solo se envia al servidor cuando el cliente lo especifica en la solicitud, es por eso que cuando hacemos el Get/ (curl -v 'http://esaas-cookie-demo.herokuapp.com') no especifimos alguna cookie (loggin_in = true) por lo tanto el servidor me responde como si no estuviera conectado
 
-
 Ahora debemos decirle a curl que incluya las cookies apropiadas de este archivo cuando visite el sitio, lo cual hacemos con la opción -b:​
 curl -v -b cookies.txt http://esaas-cookie-demo.herokuapp.com/
 El resultado que se muestra el la flecha roja indica que la cookie ha sido enviado, y el servidor a respondido con un logged in: true
 
 ![Captura desde 2023-09-25 12-32-14](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/9fffc354-27a9-428d-aadd-62dfd21f269e)
+
+Pregunta: Al observar el encabezado Set-Cookie o el contenido del archivo cookies.txt, parece que podría haber creado fácilmente esta cookie y simplemente obligar al servidor a creer que ha iniciado sesión. En la práctica, ¿cómo evitan los servidores esta inseguridad?
+
+-Autenticación basada en token, cuando un usuario inicia sesion luego un servidor de autorización valida esa autenticación inicial y luego emite un token de acceso, que es un pequeño dato que le permite a una aplicación de cliente realizar una llamada o señal segura a un servidor API, de esta manera el token funciona como un boleto de acceso para que el usuario accesa a todos los recursos, el ciclo de vida del token finaliza cuando el usuario cierra sesion/abandoa sesión [5]
