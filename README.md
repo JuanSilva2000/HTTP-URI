@@ -1,7 +1,9 @@
 # HTTP-URI
 <h1>Comprendiendo Request y Response </h1>
 La respuesta a la petición curl es un código html:
-![Captura desde 2023-09-25 14-39-32](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/d739bf91-ba5f-422f-8755-544f47a3ccb1)
+<br>
+![Captura desde 2023-09-25 14-47-41](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/3f924ac2-945d-4cdd-b0a2-8c718f35f5e6)
+
 
 
 Y lo que se muestra al abrir el link original es:
