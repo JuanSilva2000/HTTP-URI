@@ -1,5 +1,5 @@
 # HTTP-URI
-----------Comprendiendo Request y Response--------
+<h1>Comprendiendo Request y Response </h1>
 La respuesta a la petición es un cuerpo html:
 ![Captura desde 2023-09-25 11-35-04](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/add546f3-de84-480a-b77f-bd61b1fe36b7)
 
@@ -52,7 +52,7 @@ Si, en la imagen de abajo se aprecia la informacion que proporciona el encabezad
 
 ![Captura desde 2023-09-25 11-55-47](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/0e0398a5-8387-44dc-abd6-4945eeb8216d)
 
-----------¿Qué sucede cuando falla un HTTP request?-----------
+<h1>¿Qué sucede cuando falla un HTTP request?</h1>
 
 Pregunta: ¿Cuál sería el código de respuesta del servidor si intentaras buscar una URL inexistente en el sitio generador de palabras aleatorias? Pruéba esto utilizando el procedimiento anterior.
 Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna un cuerpo html en la respuesta y en la primera linea del encabezado, devuelde el numero 404 este es un error que significa que lo que se solicito no se encontró
@@ -75,7 +75,7 @@ Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna 
 Tanto el encabezado 4xx como el 5xx indican condiciones de error. ¿Cuál es la principal diferencia entre 4xx y 5xx?.
 Los errores del tipo 4xx son errores causados por el cliente, como por ejemplo poner una url inexistente en la solicitud (votará error 404) en cambio los errores del tipo 5xx son errores del servidor, no del cliente, al momento de procesar la solicitud del cliente
 
-<b>¿Qué es un cuerpo de Request?</b>
+<h1><b>¿Qué es un cuerpo de Request?</b></h1>
 
 Pregunta: Cuando se envía un formulario HTML, se genera una solicitud HTTP POST desde el navegador. Para llegar a tu servidor falso, ¿con qué URL deberías reemplazar Url-servidor-falso en el archivo anterior?
 
@@ -91,10 +91,7 @@ El resultado desde nuestro servidor falso cunado clikeamos en login in es como l
 
 
 
-
-
-
------HTTP sin estados y cookies--------
+<h1>HTTP sin estados y cookies</h1>
 
 Pregunta: Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? 
 
