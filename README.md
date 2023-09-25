@@ -75,7 +75,9 @@ Tanto el encabezado 4xx como el 5xx indican condiciones de error. ¿Cuál es la 
 Los errores del tipo 4xx son errores causados por el cliente, como por ejemplo poner una url inexistente en la solicitud (votará error 404) en cambio los errores del tipo 5xx son errores del servidor, no del cliente, al momento de procesar la solicitud del cliente
 
 ----------¿Qué es un cuerpo de Request?----------------------
-
+Pregunta: Cuando se envía un formulario HTML, se genera una solicitud HTTP POST desde el navegador. Para llegar a tu servidor falso, ¿con qué URL deberías reemplazar Url-servidor-falso en el archivo anterior?
+Como se muestra en la imagen, la url que se debe remplazar es 'http://localhost:8081', pues el servidor falso esta en nuestro mismo computador y está en el puerto 8081
+![Captura desde 2023-09-25 12-50-27](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/77f20885-c082-466e-bd76-03fd1d89f602)
 
 
 
