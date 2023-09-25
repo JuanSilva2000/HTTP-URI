@@ -25,10 +25,11 @@ Pregunta: Suponiendo que estás ejecutando curl desde otro shell ¿qué URL tend
 Rpta: curl http://localhost:8081​
 Porque dado que queremos hacer una solicitud http debemos poner http, ponemos localhost pues el servidor esta en nuestra computadora local, y 8081 hace referencia al puerto en donde se encuentra el servidor falso
 
-Resultado:
+Resultado:<br>
+
 ![Captura desde 2023-09-25 11-40-28](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/16e176b8-99d2-4aa3-a068-c937a6990a24)
 
-Lo que sucede en el servidor
+Lo que sucede en el servidor<br>
 ![Captura desde 2023-09-25 11-41-20](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/4dd5827c-b7fd-40c3-ae73-e7a41d08774c)
 
 Pregunta: La primera línea de la solicitud identifica qué URL desea recuperar el cliente. ¿Por qué no ves http://localhost:8081 en ninguna parte de esa línea?
