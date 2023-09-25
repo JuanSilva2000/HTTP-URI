@@ -60,7 +60,7 @@ Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna 
 ![Captura desde 2023-09-25 12-00-13](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/b209e03f-f0aa-4f1b-9af2-5d47b34fbe4f)
 
 
-¿Qué otros códigos de error HTTP existen? Utiliza Wikipedia u otro recurso para conocer los significados de algunos de los más comunes: 200, 301, 302, 400, 404, 500. Ten en cuenta que estas son familias de estados: todos los estados 2xx significan funcionó, todos los 3xx son redireccionar etc.
+<b>¿Qué otros códigos de error HTTP existen? Utiliza Wikipedia u otro recurso para conocer los significados de algunos de los más comunes: 200, 301, 302, 400, 404, 500. Ten en cuenta que estas son familias de estados: todos los estados 2xx significan funcionó, todos los 3xx son redireccionar etc.</b>
 200 (OK): Indica que la solicitud fue realizada con exito y si se encontró la información solicitada​
 
 301 (Moved Permanently): indica que el host si ha sido capaz de comunicarse con el servidor pero que el recurso solicitado ha sido movido a otra dirección permanentemente. [1]​
