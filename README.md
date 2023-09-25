@@ -35,7 +35,7 @@ Lo que sucede en el servidor:
 
 ![Captura desde 2023-09-25 11-41-20](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/4dd5827c-b7fd-40c3-ae73-e7a41d08774c)
 
-Pregunta: La primera línea de la solicitud identifica qué URL desea recuperar el cliente. ¿Por qué no ves http://localhost:8081 en ninguna parte de esa línea?
+<h3>Pregunta: La primera línea de la solicitud identifica qué URL desea recuperar el cliente. ¿Por qué no ves http://localhost:8081 en ninguna parte de esa línea?</h3>
 Rpta: Porque el servidor falso está aceptando la solicitud desde un puerto LOCAL, por lo tanto no es necesario incluir localhost
 
 Prueba curl --help para ver la ayuda y verificar que la línea de comando curl -i 'http://randomword.saasbook.info' mostrará ambos (BOTH) encabezados de respuesta del servidor y(AND) luego el cuerpo de la respuesta.
@@ -43,19 +43,20 @@ Como se puede ver en la imagen la primera parte es el encabezado y la segunda pa
 
 ![Captura desde 2023-09-25 11-45-16](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/6c57d992-2d56-4c20-a4a0-ae1fcc5cf998)
 
-Pregunta: Según los encabezados del servidor, ¿cuál es el código de respuesta HTTP del servidor que indica el estado de la solicitud del cliente y qué versión del protocolo HTTP utilizó el servidor para responder al cliente?
+<h3>Pregunta: Según los encabezados del servidor, ¿cuál es el código de respuesta HTTP del servidor que indica el estado de la solicitud del cliente y qué versión del protocolo HTTP utilizó el servidor para responder al cliente?</h3>
 Basicamente la linea de la flecha roja responde a la pregunta, el http/1.1 inidica la que la version de protocolo que se usó es 1.1 y el numero 200 indica que la solicitud se realizó con éxito.
 
 ![Captura desde 2023-09-25 11-49-35](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/8b1a918e-93a4-45a0-950b-204a4e3e7f77)
 
-Pregunta: Cualquier solicitud web determinada puede devolver una página HTML, una imagen u otros tipos de entidades. ¿Hay algo en los encabezados que crea que le dice al cliente cómo interpretar el resultado?
+<h3>Pregunta: Cualquier solicitud web determinada puede devolver una página HTML, una imagen u otros tipos de entidades. ¿Hay algo en los encabezados que crea que le dice al cliente cómo interpretar el resultado?</h3>
 Si, en la imagen de abajo se aprecia la informacion que proporciona el encabezado para que el cliente interprete el resultado, por ejemplo Content-Type indica el formato del cuerpo de la respuesta, ese este caso sera de formato html
 
 ![Captura desde 2023-09-25 11-55-47](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/0e0398a5-8387-44dc-abd6-4945eeb8216d)
 
 <h1>¿Qué sucede cuando falla un HTTP request?</h1>
 
-Pregunta: ¿Cuál sería el código de respuesta del servidor si intentaras buscar una URL inexistente en el sitio generador de palabras aleatorias? Pruéba esto utilizando el procedimiento anterior.
+<h3>Pregunta: ¿Cuál sería el código de respuesta del servidor si intentaras buscar una URL inexistente en el sitio generador de palabras aleatorias? Pruéba esto utilizando el procedimiento anterior.</h3>
+
 Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna un cuerpo html en la respuesta y en la primera linea del encabezado, devuelde el numero 404 este es un error que significa que lo que se solicito no se encontró
 ![Captura desde 2023-09-25 12-00-13](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/b209e03f-f0aa-4f1b-9af2-5d47b34fbe4f)
 
@@ -79,7 +80,7 @@ Los errores del tipo 4xx son errores causados por el cliente, como por ejemplo p
 
 <h1><b>¿Qué es un cuerpo de Request?</b></h1>
 
-Pregunta: Cuando se envía un formulario HTML, se genera una solicitud HTTP POST desde el navegador. Para llegar a tu servidor falso, ¿con qué URL deberías reemplazar Url-servidor-falso en el archivo anterior?
+<h3>Pregunta: Cuando se envía un formulario HTML, se genera una solicitud HTTP POST desde el navegador. Para llegar a tu servidor falso, ¿con qué URL deberías reemplazar Url-servidor-falso en el archivo anterior?</h3>
 
 Como se muestra en la imagen, la url que se debe remplazar es 'http://localhost:8081', pues el servidor falso esta en nuestro mismo computador y está en el puerto 8081
 <br>
@@ -95,7 +96,7 @@ El resultado desde nuestro servidor falso cunado clikeamos en login in es como l
 
 <h1>HTTP sin estados y cookies</h1>
 
-Pregunta: Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? 
+<h3>Pregunta: Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? </h3>
 
 Resultado del primer comando GET/​
 ![Captura desde 2023-09-25 12-09-51](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/be7bc2c3-0ae6-41f8-8b12-9f7f0cd62394)
@@ -106,7 +107,7 @@ Resultado del segundo comando GET/login
 
 La diferencia está en la flecha roja que indica una parte de la cabecera en donde se establece un cookie y se configura algunos parametros como logged_in=true etc.. Esto no se ecuentra en la anterior imagen GET/
 
-Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró una cookie que indica esto. Sin embargo, si intentaa GET / nuevamente, seguirá diciendo "Logged: false". ¿Qué está sucediendo? (Sugerencia: usa curl -v y observa los encabezados de solicitud del cliente).
+<h3>Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró una cookie que indica esto. Sin embargo, si intentaa GET / nuevamente, seguirá diciendo "Logged: false". ¿Qué está sucediendo? (Sugerencia: usa curl -v y observa los encabezados de solicitud del cliente).</h3>
 
 Rpta:Lo que sucede es que la cookie solo se envia al servidor cuando el cliente lo especifica en la solicitud, es por eso que cuando hacemos el Get/ (curl -v 'http://esaas-cookie-demo.herokuapp.com') no especifimos alguna cookie (loggin_in = true) por lo tanto el servidor me responde como si no estuviera conectado
 
