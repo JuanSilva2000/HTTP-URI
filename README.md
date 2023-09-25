@@ -84,3 +84,5 @@ Resultado del segundo comando GET/login
 ![Captura desde 2023-09-25 12-13-19](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/6f3efe45-f1b4-4bf5-b014-6c69c6b68d75)
 
 La diferencia está en la flecha roja que indica una parte de la cabecera en donde se establece un cookie y se configura algunos parametros como logged_in=true etc.. Esto no se ecuentra en la anterior imagen GET/
+
+Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró una cookie que indica esto. Sin embargo, si intentaa GET / nuevamente, seguirá diciendo "Logged: false". ¿Qué está sucediendo? (Sugerencia: usa curl -v y observa los encabezados de solicitud del cliente).
