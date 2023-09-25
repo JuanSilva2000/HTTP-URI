@@ -87,4 +87,5 @@ Resultado del segundo comando GET/login
 La diferencia está en la flecha roja que indica una parte de la cabecera en donde se establece un cookie y se configura algunos parametros como logged_in=true etc.. Esto no se ecuentra en la anterior imagen GET/
 
 Pregunta: Bien, ahora supuestamente "logged in" porque el servidor configuró una cookie que indica esto. Sin embargo, si intentaa GET / nuevamente, seguirá diciendo "Logged: false". ¿Qué está sucediendo? (Sugerencia: usa curl -v y observa los encabezados de solicitud del cliente).
-Lo que sucede es que la cookie solo se envia al servidor cuando el cliente lo especifica en la solicitud, es por eso que cuando hacemos el Get/ (curl -v 'http://esaas-cookie-demo.herokuapp.com') no especifimos alguna cookie (loggin_in = true) por lo tanto el servidor me responde como si no estuviera conectado
+
+Rpta:Lo que sucede es que la cookie solo se envia al servidor cuando el cliente lo especifica en la solicitud, es por eso que cuando hacemos el Get/ (curl -v 'http://esaas-cookie-demo.herokuapp.com') no especifimos alguna cookie (loggin_in = true) por lo tanto el servidor me responde como si no estuviera conectado
