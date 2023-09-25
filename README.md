@@ -25,11 +25,11 @@ Pregunta: Suponiendo que estás ejecutando curl desde otro shell ¿qué URL tend
 Rpta: curl http://localhost:8081​
 Porque dado que queremos hacer una solicitud http debemos poner http, ponemos localhost pues el servidor esta en nuestra computadora local, y 8081 hace referencia al puerto en donde se encuentra el servidor falso
 
-Resultado:<br>
+Resultado:
 
 ![Captura desde 2023-09-25 11-40-28](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/16e176b8-99d2-4aa3-a068-c937a6990a24)
 
-Lo que sucede en el servidor<br>
+Lo que sucede en el servidor
 ![Captura desde 2023-09-25 11-41-20](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/4dd5827c-b7fd-40c3-ae73-e7a41d08774c)
 
 Pregunta: La primera línea de la solicitud identifica qué URL desea recuperar el cliente. ¿Por qué no ves http://localhost:8081 en ninguna parte de esa línea?
@@ -55,3 +55,23 @@ Pregunta: ¿Cuál sería el código de respuesta del servidor si intentaras busc
 Como se observa en la imagen de abajo, pusimos un link inexistente y no retorna un cuerpo html en la respuesta y en la primera linea del encabezado, devuelde el numero 404 este es un error que significa que lo que se solicito no se encontró
 ![Captura desde 2023-09-25 12-00-13](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/b209e03f-f0aa-4f1b-9af2-5d47b34fbe4f)
 
+
+¿Qué otros códigos de error HTTP existen? Utiliza Wikipedia u otro recurso para conocer los significados de algunos de los más comunes: 200, 301, 302, 400, 404, 500. Ten en cuenta que estas son familias de estados: todos los estados 2xx significan funcionó, todos los 3xx son redireccionar etc.
+200 (OK): Indica que la solicitud fue realizada con exito y si se encontró la información solicitada​
+
+301 (Moved Permanently): indica que el host si ha sido capaz de comunicarse con el servidor pero que el recurso solicitado ha sido movido a otra dirección permanentemente. [1]​
+
+302 (Found): se produce cuando el recurso solicitado ha sido trasladado temporalmente a una nueva ubicación [2]​
+
+400 (Bad Request): El error 400 solicitud incorrecta ocurre cuando el servidor no puede entender la petición. Por lo tanto, no la procesa y te envía el código de error en su lugar. [3]​
+
+404 (Not Found): Este error indica que la información solicitada al servidor no exite y por lo tanto no ha sido encontrada​
+
+500 (Internal Server Error): El error HTTP 500, en particular, indica que el servidor ha encontrado una condición inesperada que le impidió cumplir con la solicitud.​ En otras palabras, el servidor de alojamiento no puede determinar el problema exacto y mostrar un mensaje más específico [4]
+
+Tanto el encabezado 4xx como el 5xx indican condiciones de error. ¿Cuál es la principal diferencia entre 4xx y 5xx?.
+Los errores del tipo 4xx son errores causados por el cliente, como por ejemplo poner una url inexistente en la solicitud (votará error 404) en cambio los errores del tipo 5xx son errores del servidor, no del cliente, al momento de procesar la solicitud del cliente
+
+HTTP sin estados y cookies
+Pregunta: Prueba las dos primeras operaciones GET anteriores. El cuerpo de la respuesta para la primera debe ser "Logged in: false" y para la segunda "Login cookie set". ¿Cuáles son las diferencias en los encabezados de respuesta que indican que la segunda operación está configurando una cookie? 
+![Captura desde 2023-09-25 12-09-51](https://github.com/JuanSilva2000/HTTP-URI/assets/124120685/be7bc2c3-0ae6-41f8-8b12-9f7f0cd62394)
